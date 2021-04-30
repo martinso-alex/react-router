@@ -8,6 +8,7 @@ import { Cabecalho } from "./components/cabecalho";
 
 import "./assets/css/base/base.css";
 import Post from "./paginas/Post";
+import Categoria from "./paginas/Categoria";
 
 function App() {
 	return (
@@ -25,6 +26,10 @@ function App() {
 
 				<Route path='/post/:id'>
 					<Post />
+				</Route>
+
+				<Route path='/categoria/:id'>
+					<Categoria />
 				</Route>
 
 				<Route>

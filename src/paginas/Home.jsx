@@ -1,4 +1,5 @@
 import React from "react";
+import { ListaCategorias } from "../components/lista-categorias";
 import { ListaPost } from "../components/lista-post";
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
 				<h2 className='titulo-pagina'>Pet notícias</h2>
 			</div>
 
+			<ListaCategorias />
 			<ListaPost url={"/posts"} />
 		</main>
 	);
