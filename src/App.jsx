@@ -7,6 +7,7 @@ import Page404 from "./paginas/404";
 import { Cabecalho } from "./components/cabecalho";
 
 import "./assets/css/base/base.css";
+import Post from "./paginas/Post";
 
 function App() {
 	return (
@@ -20,6 +21,10 @@ function App() {
 
 				<Route path='/sobre'>
 					<Sobre />
+				</Route>
+
+				<Route path='/post/:id'>
+					<Post />
 				</Route>
 
 				<Route>
